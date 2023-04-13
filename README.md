@@ -1,6 +1,10 @@
 # ICLR'23 ManyDG Paper
-- ManyDG: Many-DOMAIN GENERALIZATION FOR HEALTHCARE APPLICATIONS
+- ManyDG: Many-domain Generalization for Healthcare Applications
 - Data, Processing Scripts, Baselines and Model Codes
+> 15-minute explanation video is provided in [YouTube]
+https://www.youtube.com/watch?v=xKOSiauQtwc
+
+<img src="ICLR-2023-poster.png" width="800">
 
 ## 1. Folder Tree
 - ```data/```
