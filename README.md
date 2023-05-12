@@ -47,6 +47,15 @@ https://www.youtube.com/watch?v=xKOSiauQtwc
     - **utils_sleep.py**: This file provides the data split and loading files.
 
 ## 2. How to run the code
+- Models in the codebase
+    - `base`: backbone + non-linear prediction head
+    - `dev`: our **ManyDG** model!
+    - `condadv`: check out the paper http://proceedings.mlr.press/v70/zhao17d.html
+    - `DANN`: https://www.jmlr.org/papers/volume17/15-239/15-239.pdf
+    - `IRM`: https://arxiv.org/abs/1907.02893
+    - `SagNet`: https://openaccess.thecvf.com/content/CVPR2021/html/Nam_Reducing_Domain_Gap_by_Reducing_Style_Bias_CVPR_2021_paper.html
+    - `PCL`: https://openaccess.thecvf.com/content/CVPR2022/html/Yao_PCL_Proxy-Based_Contrastive_Learning_for_Domain_Generalization_CVPR_2022_paper.html
+    - `MLDG`: https://ojs.aaai.org/index.php/AAAI/article/view/11596
 - for seizure detection
 ``` python
 cd ./ManyDG
