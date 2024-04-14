@@ -6,7 +6,7 @@ import numpy as np
 from torch import autograd
 from collections import OrderedDict
 import sys
-sys.path.append("/srv/local/data/HealthDG")
+sys.path.append(".")
 from model import Base, Dev, CondAdv, DANN, IRM, SagNet, PCL, MLDG
 from model import SoftCEL, SoftCEL2, BYOL, entropy_for_CondAdv, ProxyPLoss
 

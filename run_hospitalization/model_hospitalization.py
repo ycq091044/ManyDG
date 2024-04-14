@@ -7,7 +7,7 @@ from torch import autograd
 from sklearn.metrics import fbeta_score, cohen_kappa_score, average_precision_score
 from collections import OrderedDict
 import sys
-sys.path.append("/home/chaoqiy2/Seizure/src_cq_new")
+sys.path.append(".")
 from model import Base, Dev, CondAdv, DANN, IRM, PCL, MLDG
 from model import BYOL, entropy_for_CondAdv, ProxyPLoss
 

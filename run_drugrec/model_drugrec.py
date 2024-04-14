@@ -7,7 +7,7 @@ from collections import OrderedDict
 from torch import autograd
 from utils_drugrec import multi_label_metric
 import sys
-sys.path.append("/srv/local/data/HealthDG")
+sys.path.append(".")
 from model import Base, Dev, CondAdv, DANN, IRM, SagNet, PCL, MLDG
 from model import BYOL, entropy_for_CondAdv
 
