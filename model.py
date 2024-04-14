@@ -178,8 +178,10 @@ class FeatureCNN_sleep(nn.Module):
         signal1 = torch.stack(signal)[:, :, :, :, 0].permute(1, 0, 2, 3)
         signal2 = torch.stack(signal)[:, :, :, :, 1].permute(1, 0, 2, 3)
         signal = (signal1 ** 2 + signal2 ** 2) ** 0.5
-        return torch.clip(torch.log(torch.clip(signal, min=1e-8)), min=0)
 
+        return torch.log(torch.clip(signal, min=1e-8))
+
+    """
     @staticmethod
     def functional_res_block(x, conv1_weight, conv1_bias, bn1_weight, bn1_bias, \
             conv2_weight, conv2_bias, bn2_weight, bn2_bias, ds_conv_weight, ds_conv_bias,
@@ -208,6 +210,7 @@ class FeatureCNN_sleep(nn.Module):
         out = self.functional_res_block(out, *fast_weights_ls[28:40])
         out = out.reshape(out.shape[0], -1)
         return out
+    """
 
     def forward(self, x):
         x = self.torch_stft(x)
